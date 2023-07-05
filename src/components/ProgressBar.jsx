@@ -9,7 +9,7 @@ const ProgressBar = ({ progress }) => {
         <Stack position='absolute' top='50px' left={10}>
             <Flex justifyContent='flex-start' alignItems='center' gap={4} mb='10px'>
 
-                <Box bgColor={progress === 1 && 'blue.200'} color={progress === 1 ? 'blue.900' : 'white'}
+                <Box bgColor={progress === 'personal' && 'blue.200'} color={progress === 1 ? 'blue.900' : 'white'}
                     w='25px' h='25px' border='1px solid white' borderRadius='500px' textAlign='center' fontSize='14px'>
                     <Text>1</Text>
                 </Box>
@@ -21,7 +21,7 @@ const ProgressBar = ({ progress }) => {
             </Flex>
 
             <Flex justifyContent='flex-start' alignItems='center' gap={4} mb='10px'>
-                <Box bgColor={progress === 2 && 'blue.200'} color={progress === 2 ? 'blue.900' : 'white'}
+                <Box bgColor={progress === 'plan' && 'blue.200'} color={progress === 2 ? 'blue.900' : 'white'}
                     w='25px' h='25px' border='1px solid white' borderRadius='500px' textAlign='center' fontSize='14px'>
                     <Text>2</Text>
                 </Box>
@@ -33,7 +33,7 @@ const ProgressBar = ({ progress }) => {
             </Flex>
 
             <Flex justifyContent='flex-start' alignItems='center' gap={4} mb='10px'>
-                <Box bgColor={progress === 3 && 'blue.200'} color={progress === 3 ? 'blue.900' : 'white'}
+                <Box bgColor={progress === 'addons' && 'blue.200'} color={progress === 3 ? 'blue.900' : 'white'}
                     w='25px' h='25px' border='1px solid white' borderRadius='500px' textAlign='center' fontSize='14px'>
                     <Text>3</Text>
                 </Box>
