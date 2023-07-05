@@ -20,6 +20,12 @@ const theme = extendTheme({
     //   xl: '80em', // 1280px
     //   '2xl': '96em', // 1536px
     // }
+    colors: {
+        button: {
+            500: "#1A365D",
+            600: "#2c5282",
+        }
+    },
 })
 
 export default theme
