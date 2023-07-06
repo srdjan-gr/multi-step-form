@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Card, CardBody, Flex, Image, Stack, Input, Heading, Text, FormControl, FormLabel, FormErrorMessage, Button } from '@chakra-ui/react'
+import { Circle, Box, Card, CardBody, Flex, Image, Stack, Input, Heading, Text, FormControl, FormLabel, FormErrorMessage, Button } from '@chakra-ui/react'
 
 
 const ProgressBar = ({ progress }) => {
@@ -9,10 +9,10 @@ const ProgressBar = ({ progress }) => {
         <Stack position='absolute' top='50px' left={10}>
             <Flex justifyContent='flex-start' alignItems='center' gap={4} mb='10px'>
 
-                <Box bgColor={progress === 'personal' && 'blue.200'} color={progress === 1 ? 'blue.900' : 'white'}
-                    w='25px' h='25px' border='1px solid white' borderRadius='500px' textAlign='center' fontSize='14px'>
+                <Circle bgColor={progress === 'personal' && 'blue.200'} color={progress === 1 ? 'blue.900' : 'white'}
+                    size='25px' border='1px solid white' fontSize='14px' >
                     <Text>1</Text>
-                </Box>
+                </Circle>
 
                 <Flex direction='column'>
                     <Heading textTransform='uppercase' fontSize='10px' color={'gray.400'} >Step 1</Heading>
@@ -21,10 +21,10 @@ const ProgressBar = ({ progress }) => {
             </Flex>
 
             <Flex justifyContent='flex-start' alignItems='center' gap={4} mb='10px'>
-                <Box bgColor={progress === 'plan' && 'blue.200'} color={progress === 2 ? 'blue.900' : 'white'}
-                    w='25px' h='25px' border='1px solid white' borderRadius='500px' textAlign='center' fontSize='14px'>
+                <Circle bgColor={progress === 'plan' && 'blue.200'} color={progress === 2 ? 'blue.900' : 'white'}
+                    size='25px' border='1px solid white' fontSize='14px' fontSize='14px'>
                     <Text>2</Text>
-                </Box>
+                </Circle>
 
                 <Flex direction='column'>
                     <Heading textTransform='uppercase' fontSize='10px' color={'gray.400'} >Step 2</Heading>
@@ -33,10 +33,10 @@ const ProgressBar = ({ progress }) => {
             </Flex>
 
             <Flex justifyContent='flex-start' alignItems='center' gap={4} mb='10px'>
-                <Box bgColor={progress === 'addons' && 'blue.200'} color={progress === 3 ? 'blue.900' : 'white'}
-                    w='25px' h='25px' border='1px solid white' borderRadius='500px' textAlign='center' fontSize='14px'>
+                <Circle bgColor={progress === 'addons' && 'blue.200'} color={progress === 3 ? 'blue.900' : 'white'}
+                    size='25px' border='1px solid white' fontSize='14px' fontSize='14px'>
                     <Text>3</Text>
-                </Box>
+                </Circle>
 
                 <Flex direction='column'>
                     <Heading textTransform='uppercase' fontSize='10px' color={'gray.400'} >Step 3</Heading>
@@ -45,10 +45,10 @@ const ProgressBar = ({ progress }) => {
             </Flex>
 
             <Flex justifyContent='flex-start' alignItems='center' gap={4} mb='10px'>
-                <Box bgColor={progress === 4 && 'blue.200'} color={progress === 4 ? 'blue.900' : 'white'}
-                    w='25px' h='25px' border='1px solid white' borderRadius='500px' textAlign='center' fontSize='14px'>
+                <Circle bgColor={progress === 4 && 'blue.200'} color={progress === 4 ? 'blue.900' : 'white'}
+                    size='25px' border='1px solid white' fontSize='14px' fontSize='14px'>
                     <Text>4</Text>
-                </Box>
+                </Circle>
 
                 <Flex direction='column'>
                     <Heading textTransform='uppercase' fontSize='10px' color={'gray.400'} >Step 4</Heading>
