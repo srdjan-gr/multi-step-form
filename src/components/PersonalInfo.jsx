@@ -12,7 +12,7 @@ const PersonalInfo = ({ progress, setProgress }) => {
 
                     <Box>
                         <Heading as='h1' size='lg' color={'blue.900'}>Personal info</Heading>
-                        <Text fontSize='12px' mb={10} color={'gray.400'}>Please provide your name, email address, and phone number.</Text>
+                        <Text fontSize='12px' mb={8} color={'gray.400'}>Please provide your name, email address, and phone number.</Text>
 
                         <FormControl>
                             <FormLabel fontSize='12px' color={'blue.700'} mb='4px'>Name</FormLabel>

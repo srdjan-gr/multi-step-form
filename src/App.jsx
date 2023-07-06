@@ -36,7 +36,7 @@ const App = () => {
         p='15px' border='none'
         boxShadow='lg' borderRadius='10px'
       >
-        <Image mr='50px' h='460px' src={sidebarImg} />
+        <Image mr='50px' h='450px' src={sidebarImg} />
 
         <ProgressBar progress={progress} />
 
