@@ -22,12 +22,15 @@ const theme = extendTheme({
     // }
     colors: {
         button: {
-            50: "#1A365D",
-            100: "#1A365D",
-            200: "#1A365D",
             500: "#1A365D",
             600: "#2c5282",
         },
+        bgcomponent: {
+            50: '#f7f8fe'
+        },
+        bgapp: {
+            100: '#eef5ff'
+        }
     },
 })
 

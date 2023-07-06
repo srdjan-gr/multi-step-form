@@ -14,7 +14,10 @@ const PlanYear = () => {
     return (
         <Flex mb='25px' justifyContent='space-between'>
 
-            <Flex w='100px' border={selectPlan === 'arcadeyr' ? '1px solid #553C9A' : '1px solid #CBD5E0'} borderRadius='5px' p='10px' flexDirection='column' justifyContent='flex-start' alignItems='flex-start' cursor='pointer'
+            <Flex w='100px' border={selectPlan === 'arcadeyr' ? '1px solid #553C9A' : '1px solid #CBD5E0'}
+                backgroundColor={selectPlan === 'arcadeyr' && 'bgcomponent.50'}
+                borderRadius='5px' p='10px' flexDirection='column' justifyContent='flex-start'
+                alignItems='flex-start' cursor='pointer'
                 onClick={() => setSelectPlan('arcadeyr')}
             >
                 <Image src={arcadeIcon} h='28px' mb='30px' />
@@ -23,7 +26,10 @@ const PlanYear = () => {
                 <Text fontSize='10px' color={'blue.700'}>2 months free</Text>
             </Flex>
 
-            <Flex w='100px' border={selectPlan === 'advancedyr' ? '1px solid #553C9A' : '1px solid #CBD5E0'} borderRadius='5px' p='10px' flexDirection='column' justifyContent='flex-start' alignItems='flex-start' cursor='pointer'
+            <Flex w='100px' border={selectPlan === 'advancedyr' ? '1px solid #553C9A' : '1px solid #CBD5E0'}
+                backgroundColor={selectPlan === 'advancedyr' && 'bgcomponent.50'}
+                borderRadius='5px' p='10px' flexDirection='column' justifyContent='flex-start'
+                alignItems='flex-start' cursor='pointer'
                 onClick={() => setSelectPlan('advancedyr')}
             >
                 <Image src={advancedIcon} h='28px' mb='30px' />
@@ -32,7 +38,10 @@ const PlanYear = () => {
                 <Text fontSize='10px' color={'blue.700'}>2 months free</Text>
             </Flex>
 
-            <Flex w='100px' border={selectPlan === 'proyr' ? '1px solid #553C9A' : '1px solid #CBD5E0'} borderRadius='5px' p='10px' flexDirection='column' justifyContent='flex-start' alignItems='flex-start' cursor='pointer'
+            <Flex w='100px' border={selectPlan === 'proyr' ? '1px solid #553C9A' : '1px solid #CBD5E0'}
+                backgroundColor={selectPlan === 'pryro' && 'bgcomponent.50'}
+                borderRadius='5px' p='10px' flexDirection='column' justifyContent='flex-start'
+                alignItems='flex-start' cursor='pointer'
                 onClick={() => setSelectPlan('proyr')}
             >
                 <Image src={proIcon} h='28px' mb='30px' />

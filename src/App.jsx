@@ -28,7 +28,7 @@ const App = () => {
 
 
   return (
-    <Flex justifyContent='center' alignItems='center' h='100vh' bgColor={'blue.50'}>
+    <Flex justifyContent='center' alignItems='center' h='100vh' bgColor={'bgapp.100'}>
 
       <Card
         direction={{ base: 'column', sm: 'row' }} overflow='hidden'

@@ -24,7 +24,8 @@ const PlanInfo = ({ progress, setProgress }) => {
 
                         {plan ? (<PlanYear />) : (<PlanMonth />)}
 
-                        <Flex w='100%' h='34px' bgColor={'gray.100'} borderRadius='5px' justifyContent='center' alignItems='center'>
+
+                        <Flex w='100%' h='34px' bgColor={'bgcomponent.50'} borderRadius='5px' justifyContent='center' alignItems='center'>
                             <Text fontSize='10px' fontWeight='bold' mr={4} color={!plan ? 'blue.900' : 'gray.400'} >Monthly</Text>
                             <Switch colorScheme='button' id='email-alerts' onChange={() => setPlan(!plan)} />
                             <Text fontSize='10px' fontWeight='bold' ml={4} color={!plan && 'gray.400'} >Yearly</Text>
