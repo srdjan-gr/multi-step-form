@@ -5,11 +5,12 @@ import sidebarImg from './images/bg-sidebar-desktop.svg'
 import ProgressBar from './components/ProgressBar'
 import PersonalInfo from './components/PersonalInfo'
 import PlanInfo from './components/PlanInfo'
+import AddonsInfo from './components/AddonsInfo'
 
 
 const App = () => {
 
-  const [progress, setProgress] = useState('plan')
+  const [progress, setProgress] = useState('addons')
   const [stage, setStage] = useState()
 
 
@@ -21,6 +22,10 @@ const App = () => {
     } else if (progress === 'plan') {
       return (
         <PlanInfo progress={progress} setProgress={setProgress} />
+      )
+    } else if (progress === 'addons') {
+      return (
+        <AddonsInfo progress={progress} setProgress={setProgress} />
       )
     }
   }
