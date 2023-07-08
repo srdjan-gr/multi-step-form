@@ -50,8 +50,7 @@ const Summary = ({ progress, setProgress }) => {
 
                     <ButtonGroup alignItems='center' spacing='auto'>
                         <Button colorScheme="button" color={'gray.400'} fontWeight='medium' fontSize='14px' variant='link' onClick={() => setProgress('addons')}>Go Back</Button>
-
-                        <Button colorScheme="blue" color='white' fontSize='12px' >Confirm</Button>
+                        <Button colorScheme="blue" color='white' fontSize='12px' onClick={() => setProgress('thankyou')}>Confirm</Button>
                     </ButtonGroup>
                 </Flex>
 
