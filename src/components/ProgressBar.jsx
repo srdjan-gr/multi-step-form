@@ -45,7 +45,7 @@ const ProgressBar = ({ progress }) => {
             </Flex>
 
             <Flex justifyContent='flex-start' alignItems='center' gap={4} mb='10px'>
-                <Circle bgColor={progress === 4 && 'blue.200'} color={progress === 4 ? 'blue.900' : 'white'}
+                <Circle bgColor={progress === 'summary' && 'blue.200'} color={progress === 4 ? 'blue.900' : 'white'}
                     size='25px' border='1px solid white' fontSize='14px' fontSize='14px'>
                     <Text>4</Text>
                 </Circle>

@@ -6,11 +6,12 @@ import ProgressBar from './components/ProgressBar'
 import PersonalInfo from './components/PersonalInfo'
 import PlanInfo from './components/PlanInfo'
 import AddonsInfo from './components/AddonsInfo'
+import Summary from './components/Summary'
 
 
 const App = () => {
 
-  const [progress, setProgress] = useState('addons')
+  const [progress, setProgress] = useState('summary')
   const [stage, setStage] = useState()
 
 
@@ -27,9 +28,12 @@ const App = () => {
       return (
         <AddonsInfo progress={progress} setProgress={setProgress} />
       )
+    } else if (progress === 'summary') {
+      return (
+        <Summary progress={progress} setProgress={setProgress} />
+      )
     }
   }
-
 
 
   return (
